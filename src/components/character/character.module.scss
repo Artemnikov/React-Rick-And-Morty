@@ -1,0 +1,27 @@
+
+    .characters {
+        padding: 2%;
+        color: #d1ccc0;
+        background: #2c2c54;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+        place-items: flex-start;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 1em;
+        
+        .character {
+            max-width: 25em;
+            background: #474787;
+            font-size: 24px;
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr 1fr;
+    
+            border-radius: 0.5em;
+
+            h2 {
+                font-weight: 600;
+            }
+        }
+    }
