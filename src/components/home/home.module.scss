@@ -12,5 +12,16 @@
             font-size: inherit;
         }
     }
+    .characters {
+        padding: 2%;
+        color: #d1ccc0;
+        background: #2c2c54;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+        place-items: flex-start;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
 
 }

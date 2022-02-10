@@ -40,9 +40,14 @@ export const Home = () => {
           setPageCount(pageCount + 1)
           }} > Next page </button> 
       </div>
-      <Character
-        characters = {characters}
-      />
+      <div className={style.characters}>
+          {characters.map((item, index) => (
+            <Character
+              key={index}
+              character = {item}
+            />
+          ))}
+      </div>
     </div>
   )
 }
