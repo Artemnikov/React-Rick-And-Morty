@@ -29,13 +29,13 @@ export const Home = () => {
         <h2> page: {pageCount} </h2>
 
         <button onClick={() => { 
-          setPage(pages[0])
           if(pageCount == 0) return
+          setPage(pages[0])
           setPageCount(pageCount - 1)
-          console.log(characters)
         }} > Prev Page </button>
 
         <button onClick={() => {
+          if(pageCount == 42) return
           setPage(pages[1])
           setPageCount(pageCount + 1)
           }} > Next page </button> 
