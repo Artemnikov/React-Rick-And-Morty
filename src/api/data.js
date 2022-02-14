@@ -8,3 +8,7 @@ export const getData = async (page) => {
         return({message: err})
     }
 }
+
+export const getTest = async () => {
+    const data = await axios.get('/resource') .then(res => console.log(res.data))
+}

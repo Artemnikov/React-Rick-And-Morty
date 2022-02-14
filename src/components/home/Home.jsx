@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useState, useEffect } from 'react';
-import { getData } from '../../api/data'
+import { getData, getTest } from '../../api/data'
 
 import { Character } from '../character/Character';
 import style from './home.module.scss'
@@ -19,6 +19,8 @@ export const Home = () => {
       setCharacters(data.data.results)
       setPages([data.data.info.prev, data.data.info.next])
     })
+    await getTest() 
+    .then( res => res) .then(data => console.log(data))
   }, [page] )
 
   return (
