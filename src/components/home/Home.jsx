@@ -19,8 +19,6 @@ export const Home = () => {
       setCharacters(data.data.results)
       setPages([data.data.info.prev, data.data.info.next])
     })
-    await getTest() 
-    .then( res => res) .then(data => console.log(data))
   }, [page] )
 
   return (

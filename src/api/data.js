@@ -10,5 +10,5 @@ export const getData = async (page) => {
 }
 
 export const getTest = async () => {
-    const data = await axios.get('/resource') .then(res => console.log(res.data))
+    const data = await axios.get('https://1dt6vm4s7e.execute-api.eu-central-1.amazonaws.com/Prod/test') .then(res => console.log(res))
 }
